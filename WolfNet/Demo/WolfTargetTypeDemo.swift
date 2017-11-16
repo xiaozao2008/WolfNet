@@ -20,7 +20,7 @@ extension WolfApi: TargetType {
     
     
     var baseURL: URL {
-        return URL.init(string: "http://staging.intviu.cn:8200")!
+        return URL.init(string: "http://www.baidu.com:8200")!
     }
     
     var path: String {
