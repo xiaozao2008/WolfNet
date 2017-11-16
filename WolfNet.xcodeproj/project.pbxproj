@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03C3EC651FBD60FF0032D380 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3EC641FBD60FF0032D380 /* AppDelegate.swift */; };
+		03C3EC671FBD60FF0032D380 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3EC661FBD60FF0032D380 /* ViewController.swift */; };
+		03C3EC6A1FBD60FF0032D380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C3EC681FBD60FF0032D380 /* Main.storyboard */; };
+		03C3EC6C1FBD60FF0032D380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03C3EC6B1FBD60FF0032D380 /* Assets.xcassets */; };
+		03C3EC6F1FBD60FF0032D380 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C3EC6D1FBD60FF0032D380 /* LaunchScreen.storyboard */; };
+		03C3ECA01FBD6BE90032D380 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C3EC951FBD6BE80032D380 /* RxCocoa.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		03C3ECA11FBD6BE90032D380 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C3EC961FBD6BE80032D380 /* RxBlocking.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		03C3ECA21FBD6BE90032D380 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C3EC971FBD6BE80032D380 /* RxSwift.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		03C3ECA31FBD6BE90032D380 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C3EC981FBD6BE80032D380 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		03C3ECA51FBD6BE90032D380 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C3EC9A1FBD6BE80032D380 /* RxMoya.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		03C3ECA61FBD6BE90032D380 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C3EC9B1FBD6BE80032D380 /* Moya.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		03C3ECA71FBD6BE90032D380 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C3EC9C1FBD6BE80032D380 /* Alamofire.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		03C3ECA81FBD6BE90032D380 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C3EC9D1FBD6BE80032D380 /* Result.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		03C3ECA91FBD6C490032D380 /* WolfTargetTypeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3EC7B1FBD610C0032D380 /* WolfTargetTypeDemo.swift */; };
+		03C3ECAA1FBD6C4D0032D380 /* WolfNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3EC771FBD610C0032D380 /* WolfNetwork.swift */; };
+		03C3ECAB1FBD6C4F0032D380 /* WolfParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3EC781FBD610C0032D380 /* WolfParams.swift */; };
+		03C3ECAC1FBD6C520032D380 /* WolfBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3EC791FBD610C0032D380 /* WolfBaseModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03C3EC611FBD60FF0032D380 /* WolfNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WolfNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03C3EC641FBD60FF0032D380 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03C3EC661FBD60FF0032D380 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		03C3EC691FBD60FF0032D380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03C3EC6B1FBD60FF0032D380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03C3EC6E1FBD60FF0032D380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03C3EC701FBD60FF0032D380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03C3EC771FBD610C0032D380 /* WolfNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolfNetwork.swift; sourceTree = "<group>"; };
+		03C3EC781FBD610C0032D380 /* WolfParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolfParams.swift; sourceTree = "<group>"; };
+		03C3EC791FBD610C0032D380 /* WolfBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolfBaseModel.swift; sourceTree = "<group>"; };
+		03C3EC7B1FBD610C0032D380 /* WolfTargetTypeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolfTargetTypeDemo.swift; sourceTree = "<group>"; };
+		03C3EC951FBD6BE80032D380 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = SOURCE_ROOT; };
+		03C3EC961FBD6BE80032D380 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = SOURCE_ROOT; };
+		03C3EC971FBD6BE80032D380 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = SOURCE_ROOT; };
+		03C3EC981FBD6BE80032D380 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = SOURCE_ROOT; };
+		03C3EC9A1FBD6BE80032D380 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = SOURCE_ROOT; };
+		03C3EC9B1FBD6BE80032D380 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = SOURCE_ROOT; };
+		03C3EC9C1FBD6BE80032D380 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
+		03C3EC9D1FBD6BE80032D380 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03C3EC5E1FBD60FF0032D380 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03C3ECA01FBD6BE90032D380 /* RxCocoa.framework in Frameworks */,
+				03C3ECA11FBD6BE90032D380 /* RxBlocking.framework in Frameworks */,
+				03C3ECA21FBD6BE90032D380 /* RxSwift.framework in Frameworks */,
+				03C3ECA31FBD6BE90032D380 /* ObjectMapper.framework in Frameworks */,
+				03C3ECA51FBD6BE90032D380 /* RxMoya.framework in Frameworks */,
+				03C3ECA61FBD6BE90032D380 /* Moya.framework in Frameworks */,
+				03C3ECA71FBD6BE90032D380 /* Alamofire.framework in Frameworks */,
+				03C3ECA81FBD6BE90032D380 /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C3EC581FBD60FF0032D380 = {
+			isa = PBXGroup;
+			children = (
+				03C3EC631FBD60FF0032D380 /* WolfNet */,
+				03C3EC7C1FBD6B750032D380 /* Frameworks */,
+				03C3EC621FBD60FF0032D380 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03C3EC621FBD60FF0032D380 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03C3EC611FBD60FF0032D380 /* WolfNet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03C3EC631FBD60FF0032D380 /* WolfNet */ = {
+			isa = PBXGroup;
+			children = (
+				03C3EC641FBD60FF0032D380 /* AppDelegate.swift */,
+				03C3EC661FBD60FF0032D380 /* ViewController.swift */,
+				03C3EC7A1FBD610C0032D380 /* Demo */,
+				03C3EC761FBD610C0032D380 /* Wolf */,
+				03C3EC681FBD60FF0032D380 /* Main.storyboard */,
+				03C3EC6B1FBD60FF0032D380 /* Assets.xcassets */,
+				03C3EC6D1FBD60FF0032D380 /* LaunchScreen.storyboard */,
+				03C3EC701FBD60FF0032D380 /* Info.plist */,
+			);
+			path = WolfNet;
+			sourceTree = "<group>";
+		};
+		03C3EC761FBD610C0032D380 /* Wolf */ = {
+			isa = PBXGroup;
+			children = (
+				03C3EC771FBD610C0032D380 /* WolfNetwork.swift */,
+				03C3EC781FBD610C0032D380 /* WolfParams.swift */,
+				03C3EC791FBD610C0032D380 /* WolfBaseModel.swift */,
+			);
+			path = Wolf;
+			sourceTree = "<group>";
+		};
+		03C3EC7A1FBD610C0032D380 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				03C3EC7B1FBD610C0032D380 /* WolfTargetTypeDemo.swift */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		03C3EC7C1FBD6B750032D380 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03C3EC9C1FBD6BE80032D380 /* Alamofire.framework */,
+				03C3EC9B1FBD6BE80032D380 /* Moya.framework */,
+				03C3EC981FBD6BE80032D380 /* ObjectMapper.framework */,
+				03C3EC9D1FBD6BE80032D380 /* Result.framework */,
+				03C3EC961FBD6BE80032D380 /* RxBlocking.framework */,
+				03C3EC951FBD6BE80032D380 /* RxCocoa.framework */,
+				03C3EC9A1FBD6BE80032D380 /* RxMoya.framework */,
+				03C3EC971FBD6BE80032D380 /* RxSwift.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03C3EC601FBD60FF0032D380 /* WolfNet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03C3EC731FBD60FF0032D380 /* Build configuration list for PBXNativeTarget "WolfNet" */;
+			buildPhases = (
+				03C3EC5D1FBD60FF0032D380 /* Sources */,
+				03C3EC5E1FBD60FF0032D380 /* Frameworks */,
+				03C3EC5F1FBD60FF0032D380 /* Resources */,
+				03C3ECAD1FBD6E670032D380 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WolfNet;
+			productName = WolfNet;
+			productReference = 03C3EC611FBD60FF0032D380 /* WolfNet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03C3EC591FBD60FF0032D380 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Tony;
+				TargetAttributes = {
+					03C3EC601FBD60FF0032D380 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 03C3EC5C1FBD60FF0032D380 /* Build configuration list for PBXProject "WolfNet" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03C3EC581FBD60FF0032D380;
+			productRefGroup = 03C3EC621FBD60FF0032D380 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03C3EC601FBD60FF0032D380 /* WolfNet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03C3EC5F1FBD60FF0032D380 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03C3EC6F1FBD60FF0032D380 /* LaunchScreen.storyboard in Resources */,
+				03C3EC6C1FBD60FF0032D380 /* Assets.xcassets in Resources */,
+				03C3EC6A1FBD60FF0032D380 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03C3ECAD1FBD6E670032D380 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxMoya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03C3EC5D1FBD60FF0032D380 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03C3ECA91FBD6C490032D380 /* WolfTargetTypeDemo.swift in Sources */,
+				03C3EC671FBD60FF0032D380 /* ViewController.swift in Sources */,
+				03C3ECAC1FBD6C520032D380 /* WolfBaseModel.swift in Sources */,
+				03C3ECAB1FBD6C4F0032D380 /* WolfParams.swift in Sources */,
+				03C3ECAA1FBD6C4D0032D380 /* WolfNetwork.swift in Sources */,
+				03C3EC651FBD60FF0032D380 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		03C3EC681FBD60FF0032D380 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03C3EC691FBD60FF0032D380 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		03C3EC6D1FBD60FF0032D380 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03C3EC6E1FBD60FF0032D380 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03C3EC711FBD60FF0032D380 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		03C3EC721FBD60FF0032D380 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03C3EC741FBD60FF0032D380 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = WolfNet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tony.WolfNet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03C3EC751FBD60FF0032D380 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = WolfNet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Tony.WolfNet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03C3EC5C1FBD60FF0032D380 /* Build configuration list for PBXProject "WolfNet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03C3EC711FBD60FF0032D380 /* Debug */,
+				03C3EC721FBD60FF0032D380 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03C3EC731FBD60FF0032D380 /* Build configuration list for PBXNativeTarget "WolfNet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03C3EC741FBD60FF0032D380 /* Debug */,
+				03C3EC751FBD60FF0032D380 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03C3EC591FBD60FF0032D380 /* Project object */;
+}
