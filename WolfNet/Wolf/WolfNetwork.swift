@@ -24,7 +24,7 @@ private func JSONResponseDataFormatter(_ data: Data) -> Data {
 public class WolfNetwork {
     
     // 基础的网络请求返回字典类型
-    class func requestObjc<T: Mappable, R: TargetType>(type: R, progress: ProgressBlock? = nil, completion: @escaping ((T?) -> Void), msg: @escaping ((String?, Int?) -> Void)) -> Cancellable {
+    public class func requestObjc<T: Mappable, R: TargetType>(type: R, progress: ProgressBlock? = nil, completion: @escaping ((T?) -> Void), msg: @escaping ((String?, Int?) -> Void)) -> Cancellable {
 
         let provider = self.createProvider(type)
         return provider.request(type, progress: progress, completion: { (event) in
@@ -39,7 +39,7 @@ public class WolfNetwork {
     }
     
     // 基础的网络请求返回数组类型
-    class func requestList<T: Mappable, R: TargetType>(type: R, progress: ProgressBlock? = nil, completion: @escaping (([T]?) -> Void), msg: @escaping ((String?, Int?) -> Void)) -> Cancellable {
+    public class func requestList<T: Mappable, R: TargetType>(type: R, progress: ProgressBlock? = nil, completion: @escaping (([T]?) -> Void), msg: @escaping ((String?, Int?) -> Void)) -> Cancellable {
         let provider = self.createProvider(type)
         return provider.request(type, progress: progress, completion: { (event) in
             switch event {
