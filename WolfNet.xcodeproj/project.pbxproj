@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03B360AF1FBE9FCC00E29335 /* WolfParams.swift in Headers */ = {isa = PBXBuildFile; fileRef = 03C3EC781FBD610C0032D380 /* WolfParams.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		03C3EC651FBD60FF0032D380 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3EC641FBD60FF0032D380 /* AppDelegate.swift */; };
 		03C3EC671FBD60FF0032D380 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3EC661FBD60FF0032D380 /* ViewController.swift */; };
 		03C3EC6A1FBD60FF0032D380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C3EC681FBD60FF0032D380 /* Main.storyboard */; };
@@ -118,6 +119,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		03B360AE1FBE9FBA00E29335 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03B360AF1FBE9FCC00E29335 /* WolfParams.swift in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		03C3EC601FBD60FF0032D380 /* WolfNet */ = {
 			isa = PBXNativeTarget;
@@ -129,6 +141,7 @@
 				03C3EC5F1FBD60FF0032D380 /* Resources */,
 				D3780A658CD3FE253BE6324F /* [CP] Embed Pods Frameworks */,
 				F3C2F3BB5906039038B031B3 /* [CP] Copy Pods Resources */,
+				03B360AE1FBE9FBA00E29335 /* Headers */,
 			);
 			buildRules = (
 			);
