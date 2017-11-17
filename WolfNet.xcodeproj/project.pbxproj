@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		03B360AF1FBE9FCC00E29335 /* WolfParams.swift in Headers */ = {isa = PBXBuildFile; fileRef = 03C3EC781FBD610C0032D380 /* WolfParams.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		03B360B01FBEA09C00E29335 /* WolfNetwork.swift in Headers */ = {isa = PBXBuildFile; fileRef = 03C3EC771FBD610C0032D380 /* WolfNetwork.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		03B360B11FBEA0A000E29335 /* WolfBaseModel.swift in Headers */ = {isa = PBXBuildFile; fileRef = 03C3EC791FBD610C0032D380 /* WolfBaseModel.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		03C3EC651FBD60FF0032D380 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3EC641FBD60FF0032D380 /* AppDelegate.swift */; };
 		03C3EC671FBD60FF0032D380 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3EC661FBD60FF0032D380 /* ViewController.swift */; };
 		03C3EC6A1FBD60FF0032D380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C3EC681FBD60FF0032D380 /* Main.storyboard */; };
@@ -125,6 +127,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				03B360AF1FBE9FCC00E29335 /* WolfParams.swift in Headers */,
+				03B360B11FBEA0A000E29335 /* WolfBaseModel.swift in Headers */,
+				03B360B01FBEA09C00E29335 /* WolfNetwork.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
