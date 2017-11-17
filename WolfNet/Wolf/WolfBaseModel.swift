@@ -9,9 +9,9 @@
 import ObjectMapper
 import Foundation
 
-public class WolfEmpty<T: Mappable>: Mappable {
+public class WolfEmpty: Mappable {
     
-    required public init?(map: Map) {
+    public required init?(map: Map) {
     }
     
     public func mapping(map: Map) {

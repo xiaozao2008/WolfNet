@@ -75,21 +75,21 @@ public class WolfNetwork {
 
 struct Model {
     
-    static func objectFromJSON<T: Mappable>(_ Json: Data, _ msg: ((String?, Int?) -> Void)) -> WolfBaseModel<T>? {
+    static func objectFromJSON<T: Mappable>(_ Json: Data, _ msg: ((String?, Int?) -> Void)?) -> WolfBaseModel<T>? {
         let mapperModel = Mapper<WolfBaseModel<T>>()
         if let json = String.init(data: Json, encoding: .utf8) {
             let object = mapperModel.map(JSONString: json)
-            msg(object?.msg, object?.code)
+            msg?(object?.msg, object?.code)
             return object
         }
         return nil
     }
     
-    static func listFromJSON<T: Mappable>(_ Json: Data, _ msg: ((String?, Int?) -> Void)) -> WolfListModel<T>? {
+    static func listFromJSON<T: Mappable>(_ Json: Data, _ msg: ((String?, Int?) -> Void)?) -> WolfListModel<T>? {
         let mapperModel = Mapper<WolfListModel<T>>()
         if let json = String.init(data: Json, encoding: .utf8) {
             let object = mapperModel.map(JSONString: json)
-            msg(object?.msg, object?.code)
+            msg?(object?.msg, object?.code)
             return object
         }
         return nil
