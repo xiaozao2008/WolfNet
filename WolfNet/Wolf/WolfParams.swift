@@ -12,7 +12,7 @@ import Moya
 
 let WolfNetworkParams = WolfParams()
 
-class WolfParams: NSObject {
+public class WolfParams: NSObject {
     var msg = "msg"
     var code = "code"
     var data = "data"
@@ -22,7 +22,7 @@ class WolfParams: NSObject {
     var sessionManager = DefaultAlamofireManager.sharedManager
 }
 
-class DefaultAlamofireManager: Alamofire.SessionManager {
+public class DefaultAlamofireManager: Alamofire.SessionManager {
     
     static let sharedManager: DefaultAlamofireManager = {
         let configuration = URLSessionConfiguration.default

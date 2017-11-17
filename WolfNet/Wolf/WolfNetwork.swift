@@ -21,7 +21,7 @@ private func JSONResponseDataFormatter(_ data: Data) -> Data {
     }
 }
 
-class WolfNetwork {
+public class WolfNetwork {
     
     // 基础的网络请求返回字典类型
     class func requestObjc<T: Mappable, R: TargetType>(type: R, progress: ProgressBlock? = nil, completion: @escaping ((T?) -> Void), msg: @escaping ((String?, Int?) -> Void)) -> Cancellable {
@@ -53,7 +53,7 @@ class WolfNetwork {
     }
     
     
-    class func createProvider<T: TargetType>(_ target: T) -> MoyaProvider<T> {
+    fileprivate class func createProvider<T: TargetType>(_ target: T) -> MoyaProvider<T> {
         
         let endpointClosure = { (target: T) -> Endpoint<T> in
             let url = target.baseURL.appendingPathComponent(target.path).absoluteString
