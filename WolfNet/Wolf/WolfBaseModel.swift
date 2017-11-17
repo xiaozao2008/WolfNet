@@ -9,6 +9,16 @@
 import ObjectMapper
 import Foundation
 
+public class WolfEmpty<T: Mappable>: Mappable {
+    
+    required public init?(map: Map) {
+    }
+    
+    public func mapping(map: Map) {
+    }
+
+}
+
 class WolfBaseModel<T: Mappable>: Mappable {
     
     var code = 404
