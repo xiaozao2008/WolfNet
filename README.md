@@ -4,6 +4,12 @@
 ##### 请求部分
 
 > 在你的代码中最终请求, 应该类似于下面的样子
+> 
+> 如果是一般的网络请求可以写一个接受的Model或者[Model]
+> 
+> 如果是提示类的空数据, 也可以使用WolfEmpty, 替换例子中的PriceModel
+
+    import WolfNet
 
     let _ = WolfNetwork.requestObjc(type: WolfApi.wolfGet, completion: { (data: PriceModel?) in
       if let data = data {
