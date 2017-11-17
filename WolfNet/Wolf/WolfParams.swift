@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 import Moya
 
-let WolfNetworkParams = WolfParams()
+public let WolfNetworkParams = WolfParams()
 
 public class WolfParams: NSObject {
     var msg = "msg"
