@@ -13,13 +13,13 @@ import Moya
 public let WolfNetworkParams = WolfParams()
 
 public class WolfParams: NSObject {
-    var msg = "msg"
-    var code = "code"
-    var data = "data"
+    public var msg = "msg"
+    public var code = "code"
+    public var data = "data"
     // 请求头
-    var isDebug = false
-    var header = [String: String]()
-    var sessionManager = DefaultAlamofireManager.sharedManager
+    public var isDebug = false
+    public var header = [String: String]()
+    public var sessionManager = DefaultAlamofireManager.sharedManager
 }
 
 public class DefaultAlamofireManager: Alamofire.SessionManager {

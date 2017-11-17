@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "WolfNet"
-  s.version      = "1.0.4"
+  s.version      = "1.0.5"
   s.summary      = "泛型的网络请求与解析"
   s.homepage     = "https://github.com/xiaozao2008/WolfNet"
   s.license      = "MIT"
