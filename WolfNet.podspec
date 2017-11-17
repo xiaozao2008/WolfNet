@@ -10,14 +10,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/xiaozao2008/WolfNet.git", :tag => "#{s.version}" }
   s.source_files  = "WolfNet/Wolf/*.{h,m,swift}"
 
-  s.subspec "Moya" do |ss|
-    ss.source_files = "Sources/Moya/"
-    ss.dependency "Moya"
-  end
-
-  s.subspec "ObjectMapper" do |ss|
-    ss.source_files = "Sources/ObjectMapper/"
-    ss.dependency "ObjectMapper"
-  end
+  s.dependency "Moya"
+  s.dependency "ObjectMapper"
 
 end
