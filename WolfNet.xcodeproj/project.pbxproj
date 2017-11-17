@@ -12,18 +12,11 @@
 		03C3EC6A1FBD60FF0032D380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C3EC681FBD60FF0032D380 /* Main.storyboard */; };
 		03C3EC6C1FBD60FF0032D380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03C3EC6B1FBD60FF0032D380 /* Assets.xcassets */; };
 		03C3EC6F1FBD60FF0032D380 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C3EC6D1FBD60FF0032D380 /* LaunchScreen.storyboard */; };
-		03C3ECA01FBD6BE90032D380 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C3EC951FBD6BE80032D380 /* RxCocoa.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		03C3ECA11FBD6BE90032D380 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C3EC961FBD6BE80032D380 /* RxBlocking.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		03C3ECA21FBD6BE90032D380 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C3EC971FBD6BE80032D380 /* RxSwift.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		03C3ECA31FBD6BE90032D380 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C3EC981FBD6BE80032D380 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		03C3ECA51FBD6BE90032D380 /* RxMoya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C3EC9A1FBD6BE80032D380 /* RxMoya.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		03C3ECA61FBD6BE90032D380 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C3EC9B1FBD6BE80032D380 /* Moya.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		03C3ECA71FBD6BE90032D380 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C3EC9C1FBD6BE80032D380 /* Alamofire.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		03C3ECA81FBD6BE90032D380 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C3EC9D1FBD6BE80032D380 /* Result.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		03C3ECA91FBD6C490032D380 /* WolfTargetTypeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3EC7B1FBD610C0032D380 /* WolfTargetTypeDemo.swift */; };
 		03C3ECAA1FBD6C4D0032D380 /* WolfNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3EC771FBD610C0032D380 /* WolfNetwork.swift */; };
 		03C3ECAB1FBD6C4F0032D380 /* WolfParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3EC781FBD610C0032D380 /* WolfParams.swift */; };
 		03C3ECAC1FBD6C520032D380 /* WolfBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3EC791FBD610C0032D380 /* WolfBaseModel.swift */; };
+		F056B21B7FFB52423BE67B7A /* Pods_WolfNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 126FB810BD1FAD80A497AEFA /* Pods_WolfNet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,14 +31,9 @@
 		03C3EC781FBD610C0032D380 /* WolfParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolfParams.swift; sourceTree = "<group>"; };
 		03C3EC791FBD610C0032D380 /* WolfBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolfBaseModel.swift; sourceTree = "<group>"; };
 		03C3EC7B1FBD610C0032D380 /* WolfTargetTypeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolfTargetTypeDemo.swift; sourceTree = "<group>"; };
-		03C3EC951FBD6BE80032D380 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = SOURCE_ROOT; };
-		03C3EC961FBD6BE80032D380 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = SOURCE_ROOT; };
-		03C3EC971FBD6BE80032D380 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = SOURCE_ROOT; };
-		03C3EC981FBD6BE80032D380 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = SOURCE_ROOT; };
-		03C3EC9A1FBD6BE80032D380 /* RxMoya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxMoya.framework; path = Carthage/Build/iOS/RxMoya.framework; sourceTree = SOURCE_ROOT; };
-		03C3EC9B1FBD6BE80032D380 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = SOURCE_ROOT; };
-		03C3EC9C1FBD6BE80032D380 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = SOURCE_ROOT; };
-		03C3EC9D1FBD6BE80032D380 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = SOURCE_ROOT; };
+		126FB810BD1FAD80A497AEFA /* Pods_WolfNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WolfNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		654F1D3B4F6703A73A5C564D /* Pods-WolfNet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WolfNet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WolfNet/Pods-WolfNet.debug.xcconfig"; sourceTree = "<group>"; };
+		A568EF7213960C4DB8B50352 /* Pods-WolfNet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WolfNet.release.xcconfig"; path = "Pods/Target Support Files/Pods-WolfNet/Pods-WolfNet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,14 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03C3ECA01FBD6BE90032D380 /* RxCocoa.framework in Frameworks */,
-				03C3ECA11FBD6BE90032D380 /* RxBlocking.framework in Frameworks */,
-				03C3ECA21FBD6BE90032D380 /* RxSwift.framework in Frameworks */,
-				03C3ECA31FBD6BE90032D380 /* ObjectMapper.framework in Frameworks */,
-				03C3ECA51FBD6BE90032D380 /* RxMoya.framework in Frameworks */,
-				03C3ECA61FBD6BE90032D380 /* Moya.framework in Frameworks */,
-				03C3ECA71FBD6BE90032D380 /* Alamofire.framework in Frameworks */,
-				03C3ECA81FBD6BE90032D380 /* Result.framework in Frameworks */,
+				F056B21B7FFB52423BE67B7A /* Pods_WolfNet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,8 +52,9 @@
 			isa = PBXGroup;
 			children = (
 				03C3EC631FBD60FF0032D380 /* WolfNet */,
-				03C3EC7C1FBD6B750032D380 /* Frameworks */,
 				03C3EC621FBD60FF0032D380 /* Products */,
+				CE7149A5C44489ABFB19754F /* Pods */,
+				D510DEE580B737414225FBFB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,19 +99,21 @@
 			path = Demo;
 			sourceTree = "<group>";
 		};
-		03C3EC7C1FBD6B750032D380 /* Frameworks */ = {
+		CE7149A5C44489ABFB19754F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				03C3EC9C1FBD6BE80032D380 /* Alamofire.framework */,
-				03C3EC9B1FBD6BE80032D380 /* Moya.framework */,
-				03C3EC981FBD6BE80032D380 /* ObjectMapper.framework */,
-				03C3EC9D1FBD6BE80032D380 /* Result.framework */,
-				03C3EC961FBD6BE80032D380 /* RxBlocking.framework */,
-				03C3EC951FBD6BE80032D380 /* RxCocoa.framework */,
-				03C3EC9A1FBD6BE80032D380 /* RxMoya.framework */,
-				03C3EC971FBD6BE80032D380 /* RxSwift.framework */,
+				654F1D3B4F6703A73A5C564D /* Pods-WolfNet.debug.xcconfig */,
+				A568EF7213960C4DB8B50352 /* Pods-WolfNet.release.xcconfig */,
 			);
-			path = Frameworks;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D510DEE580B737414225FBFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				126FB810BD1FAD80A497AEFA /* Pods_WolfNet.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,10 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03C3EC731FBD60FF0032D380 /* Build configuration list for PBXNativeTarget "WolfNet" */;
 			buildPhases = (
+				62B53727DE9D431E1E2E697B /* [CP] Check Pods Manifest.lock */,
 				03C3EC5D1FBD60FF0032D380 /* Sources */,
 				03C3EC5E1FBD60FF0032D380 /* Frameworks */,
 				03C3EC5F1FBD60FF0032D380 /* Resources */,
-				03C3ECAD1FBD6E670032D380 /* ShellScript */,
+				D3780A658CD3FE253BE6324F /* [CP] Embed Pods Frameworks */,
+				F3C2F3BB5906039038B031B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,26 +187,62 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		03C3ECAD1FBD6E670032D380 /* ShellScript */ = {
+		62B53727DE9D431E1E2E697B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxMoya.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WolfNet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3780A658CD3FE253BE6324F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WolfNet/Pods-WolfNet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WolfNet/Pods-WolfNet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3C2F3BB5906039038B031B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WolfNet/Pods-WolfNet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -369,6 +391,7 @@
 		};
 		03C3EC741FBD60FF0032D380 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 654F1D3B4F6703A73A5C564D /* Pods-WolfNet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -387,6 +410,7 @@
 		};
 		03C3EC751FBD60FF0032D380 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A568EF7213960C4DB8B50352 /* Pods-WolfNet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

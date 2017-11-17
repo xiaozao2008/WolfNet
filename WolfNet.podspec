@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.author             = { "xiaozao2008" => "xiaozao2008@msn.cn" }
   s.source       = { :git => "https://github.com/xiaozao2008/WolfNet.git", :tag => "#{s.version}" }
-  s.source_files  = "tree/master/WolfNet/Wolf/", "tree/master/WolfNet/**/*.{h,m,swift}"
+  s.source_files  = "WolfNet/Wolf/*.{h,m,swift}"
 
   s.subspec "Moya" do |ss|
     ss.source_files = "Sources/Moya/"
