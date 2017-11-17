@@ -31,6 +31,20 @@
        debugPrint(msg)
     }
     
+    
+> 或者带进度
+
+    let _ = WolfNetwork.requestObjc(type: WolfApi.wolfGet, progress: { (progressObjc) in
+	    print(progressObjc.progress)
+	    print(progressObjc.progressObject?.totalUnitCount)
+	    print(progressObjc.progressObject?.completedUnitCount)
+    }, completion: { (data: WolfEmpty?) in
+            
+    }) { (msg, code) in
+            
+    }
+
+    
 > 可见上方参数主要有2个
 
 >> 1. WolfApi.wolfGet
