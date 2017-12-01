@@ -98,8 +98,8 @@
 
     Pod
     
-    pod 'WolfNet'
+     pod 'WolfNet'
     
     Carthage 
     
-    github 'xiaozao2008/WolfNet'
+     github 'xiaozao2008/WolfNet'
