@@ -96,10 +96,13 @@
 
 ##### Pod 与 Carthage支持
 
-    Pod
+
+    	Pod
     
-     pod 'WolfNet'
+    	pod 'WolfNet'
     
-    Carthage 
+    	Carthage 
     
-     github 'xiaozao2008/WolfNet'
+    	github 'xiaozao2008/WolfNet'
+	
+	
