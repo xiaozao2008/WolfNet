@@ -25,8 +25,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // https://www.mocky.io
         // {"code":200,"msg":"success","data":{"name":"Tony","age":18}}
-        WolfNetworkParams.isDebug = true
-        WolfNetwork.request(type: WolfApi.wolfGet, completion: { (user: User?, msg, code) in
+        wolf.isDebug = true
+        Wolf.request(type: WolfApi.wolfGet, completion: { (user: User?, msg, code) in
             print(user?.name)
             print(user?.age)
         }) { (error) in

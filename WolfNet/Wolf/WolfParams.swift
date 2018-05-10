@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 import Moya
 
-public let WolfNetworkParams = WolfParams()
+public let wolf = WolfParams()
 
 public class WolfParams {
     // 请求头

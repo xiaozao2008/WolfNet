@@ -20,7 +20,7 @@ private func JSONResponseDataFormatter(_ data: Data) -> Data {
     }
 }
 
-public class WolfNetwork {
+public class Wolf {
     
     // 基础的网络请求返回字典类型
     public class func request<T: WolfProtocol, R: TargetType>(type: R, progress: ProgressBlock? = nil, completion: ((T?, String?, Int?) -> ())?, failure: ((MoyaError?) -> ())?) -> Cancellable {
@@ -29,7 +29,7 @@ public class WolfNetwork {
         return provider.request(type, progress: progress, completion: { (event) in
             switch event {
             case let .success(response):
-                Model.objectFromJSON(response.data, completion)
+                WolfTransformModel.objectFromJSON(response.data, completion)
             case let .failure(error):
                 debugPrint(error.localizedDescription)
                 failure?(error)
@@ -43,7 +43,7 @@ public class WolfNetwork {
         return provider.request(type, progress: progress, completion: { (event) in
             switch event {
             case let .success(response):
-                Model.listFromJSON(response.data, completion)
+                WolfTransformModel.listFromJSON(response.data, completion)
              case let .failure(error):
                 debugPrint(error.localizedDescription)
                 failure?(error)
@@ -59,17 +59,17 @@ public class WolfNetwork {
             let endpoint: Endpoint = Endpoint(url: url, sampleResponseClosure: { () -> EndpointSampleResponse in
                 return .networkResponse(200, target.sampleData)
             }, method: target.method, task: target.task, httpHeaderFields: target.headers)
-            return endpoint.adding(newHTTPHeaderFields: WolfNetworkParams.header)
+            return endpoint.adding(newHTTPHeaderFields: wolf.header)
         }
-        if WolfNetworkParams.isDebug {
-            return MoyaProvider<T>(endpointClosure: endpointClosure, manager: WolfNetworkParams.sessionManager, plugins: [NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter)])
+        if wolf.isDebug {
+            return MoyaProvider<T>(endpointClosure: endpointClosure, manager: wolf.sessionManager, plugins: [NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter)])
         } else {
-            return MoyaProvider<T>(endpointClosure: endpointClosure, manager: WolfNetworkParams.sessionManager)
+            return MoyaProvider<T>(endpointClosure: endpointClosure, manager: wolf.sessionManager)
         }
     }
 }
 
-struct Model {
+fileprivate struct WolfTransformModel {
     
     static func objectFromJSON<T: WolfProtocol>(_ Json: Data, _ response: ((T?, String?, Int?) -> Void)?) {
         let tmp: WolfBaseModel<T>? = WolfModel.model(Json)
