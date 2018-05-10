@@ -1,5 +1,9 @@
-# WolfNet
-一个使用 泛型 + ObjectMapper + Moya的网络请求工具
+# WolfNet - Demo
+仅支持Swift4.0+
+
+一个使用 泛型 + Codable + Moya的网络请求框架
+
+Demo
 
 ##### 请求部分
 
@@ -9,26 +13,21 @@
 > 
 > 如果是提示类的空数据, 也可以使用WolfEmpty, 替换例子中的PriceModel
 
-    import WolfNet
 
-    let _ = WolfNetwork.requestObjc(type: WolfApi.wolfGet, completion: { (data: PriceModel?) in
-      if let data = data {
-        debugPrint(data)
-      }
-    }) { (msg, code) in
-       debugPrint(code)
-       debugPrint(msg)
+ 	let _ = WolfNetwork.request(type: WolfApi.wolfGet, completion: { (user: User?, msg, code) in
+		print(user?.name)
+		print(user?.age)
+	}) { (error) in
+            
     }
+
  
  > 或者
  
-    let _ = WolfNetwork.requestList(type: WolfApi.wolfGet, completion: { (data: [PriceModel]?) in
-      if let data = data {
-        debugPrint(data)
-      }
-    }) { (msg, code) in
-       debugPrint(code)
-       debugPrint(msg)
+    let _ = WolfNetwork.requestList(type: WolfApi.wolfGet, completion: { (user: [User]?, msg, code) in
+            
+    }) { (error) in
+            
     }
     
     
@@ -38,9 +37,9 @@
 	    print(progressObjc.progress)
 	    print(progressObjc.progressObject?.totalUnitCount)
 	    print(progressObjc.progressObject?.completedUnitCount)
-    }, completion: { (data: WolfEmpty?) in
+    }, completion: { (user: [User]?, msg, code) in
             
-    }) { (msg, code) in
+    }) { (error) in
             
     }
 
@@ -56,7 +55,7 @@
 >> 在Demo中我简单创建了一个发起请求的方式
 > 
 > 参数2, PriceModel
-> >其实就是你创建的Model, 需要遵守ObjectMapper的Mappable协议.
+> >其实就是你创建的Model, 需要遵守我自定义的WolfProtocl的Codable协议.
 
 > 另外利用WolfNetwork.request...的返回值是一个Cancellable类型, 你可以对发起的请求进行取消.
 > 
@@ -71,18 +70,7 @@
     
 >  服务器的第一层参数
  
-    {
-     "data" : { 
-     	// 服务器返回的其他参数
-     },
-     "code" : 1000
-     "msg" : "success"
-    } 
-    // 为了方便实用, 第一层model由这个工具来解开
-    // 所以如果key略有不同, 请在发起请求前赋值一次(仅需一次, 也支持多次修改)
-    WolfNetworkParams.code = "code"
-    WolfNetworkParams.msg = "msg"
-    WolfNetworkParams.data = "data"
+    可以参考WolfBaseModel类文件
     
     
 >  设置通用的请求header
@@ -93,16 +81,5 @@
 
     WolfNetworkParams.sessionManager = Alamofire.SessionManager
 
-
-##### Pod 与 Carthage支持
-
-
-    	Pods
-	
-    pod 'WolfNet'
-    
-    	Carthage 
-    
-    github 'xiaozao2008/WolfNet'
 	
 	

@@ -1,7 +1,7 @@
-platform :ios, '9.0'
+platform :ios, '8.0'
 use_frameworks!
 
 target 'WolfNet' do
 pod 'Moya'
-pod 'ObjectMapper'
+pod 'Alamofire'
 end

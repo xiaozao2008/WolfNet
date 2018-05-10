@@ -20,13 +20,13 @@ extension WolfApi: TargetType {
     
     
     var baseURL: URL {
-        return URL.init(string: "http://www.baidu.com:8200")!
+        return URL.init(string: "http://www.mocky.io")!
     }
     
     var path: String {
         switch self {
         case .wolfGet:
-            return "gift/list"
+            return "/v2/5af47a1655000010007a5323"
         case .wolfPost:
             return "post"
         case .wolfUpdate(let url):
@@ -50,7 +50,7 @@ extension WolfApi: TargetType {
     }
     
     var sampleData: Data {
-        return "{'code': 1,6'Token':'123455'}".data(using: .utf8)!
+        return Data.init()
     }
     
     var task: Moya.Task {

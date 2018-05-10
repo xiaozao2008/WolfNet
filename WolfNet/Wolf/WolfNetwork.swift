@@ -8,7 +8,6 @@
 
 import Foundation
 import Moya
-import ObjectMapper
 
 // Moya插件, 可以在特殊情况下打印
 private func JSONResponseDataFormatter(_ data: Data) -> Data {
@@ -24,30 +23,30 @@ private func JSONResponseDataFormatter(_ data: Data) -> Data {
 public class WolfNetwork {
     
     // 基础的网络请求返回字典类型
-    public class func requestObjc<T: Mappable, R: TargetType>(type: R, progress: ProgressBlock? = nil, completion: @escaping ((T?) -> Void), msg: @escaping ((String?, Int?) -> Void)) -> Cancellable {
+    public class func request<T: WolfProtocol, R: TargetType>(type: R, progress: ProgressBlock? = nil, completion: ((T?, String?, Int?) -> ())?, failure: ((MoyaError?) -> ())?) -> Cancellable {
 
         let provider = self.createProvider(type)
         return provider.request(type, progress: progress, completion: { (event) in
             switch event {
             case let .success(response):
-                completion(Model.objectFromJSON(response.data, msg)?.data)
+                Model.objectFromJSON(response.data, completion)
             case let .failure(error):
-                debugPrint(error) // 错误通用处理一下
-                msg("请求发生错误", 404)
+                debugPrint(error.localizedDescription)
+                failure?(error)
             }
         })
     }
     
     // 基础的网络请求返回数组类型
-    public class func requestList<T: Mappable, R: TargetType>(type: R, progress: ProgressBlock? = nil, completion: @escaping (([T]?) -> Void), msg: @escaping ((String?, Int?) -> Void)) -> Cancellable {
+    public class func requestList<T: WolfProtocol, R: TargetType>(type: R, progress: ProgressBlock? = nil, completion: (([T]?, String?, Int?) -> Void)?, failure: ((MoyaError?) -> ())?) -> Cancellable {
         let provider = self.createProvider(type)
         return provider.request(type, progress: progress, completion: { (event) in
             switch event {
             case let .success(response):
-                completion(Model.listFromJSON(response.data, msg)?.dataList)
+                Model.listFromJSON(response.data, completion)
              case let .failure(error):
-                debugPrint(error) // 错误通用处理一下
-                msg("请求发生错误", 404)
+                debugPrint(error.localizedDescription)
+                failure?(error)
             }
         })
     }
@@ -55,9 +54,9 @@ public class WolfNetwork {
     
     fileprivate class func createProvider<T: TargetType>(_ target: T) -> MoyaProvider<T> {
         
-        let endpointClosure = { (target: T) -> Endpoint<T> in
+        let endpointClosure = { (target: T) -> Endpoint in
             let url = target.baseURL.appendingPathComponent(target.path).absoluteString
-            let endpoint: Endpoint<T> = Endpoint<T>(url: url, sampleResponseClosure: { () -> EndpointSampleResponse in
+            let endpoint: Endpoint = Endpoint(url: url, sampleResponseClosure: { () -> EndpointSampleResponse in
                 return .networkResponse(200, target.sampleData)
             }, method: target.method, task: target.task, httpHeaderFields: target.headers)
             return endpoint.adding(newHTTPHeaderFields: WolfNetworkParams.header)
@@ -67,32 +66,19 @@ public class WolfNetwork {
         } else {
             return MoyaProvider<T>(endpointClosure: endpointClosure, manager: WolfNetworkParams.sessionManager)
         }
-        
-        
     }
-    
 }
 
 struct Model {
     
-    static func objectFromJSON<T: Mappable>(_ Json: Data, _ msg: ((String?, Int?) -> Void)?) -> WolfBaseModel<T>? {
-        let mapperModel = Mapper<WolfBaseModel<T>>()
-        if let json = String.init(data: Json, encoding: .utf8) {
-            let object = mapperModel.map(JSONString: json)
-            msg?(object?.msg, object?.code)
-            return object
-        }
-        return nil
+    static func objectFromJSON<T: WolfProtocol>(_ Json: Data, _ response: ((T?, String?, Int?) -> Void)?) {
+        let tmp: WolfBaseModel<T>? = WolfModel.model(Json)
+        response?(tmp?.data, tmp?.msg, tmp?.code)
     }
     
-    static func listFromJSON<T: Mappable>(_ Json: Data, _ msg: ((String?, Int?) -> Void)?) -> WolfListModel<T>? {
-        let mapperModel = Mapper<WolfListModel<T>>()
-        if let json = String.init(data: Json, encoding: .utf8) {
-            let object = mapperModel.map(JSONString: json)
-            msg?(object?.msg, object?.code)
-            return object
-        }
-        return nil
+    static func listFromJSON<T: WolfProtocol>(_ Json: Data, _ response: (([T]?, String?, Int?) -> Void)?) {
+        let tmp: WolfBaseModels<T>? = WolfModel.model(Json)
+        response?(tmp?.data, tmp?.msg, tmp?.code)
     }
 
 }

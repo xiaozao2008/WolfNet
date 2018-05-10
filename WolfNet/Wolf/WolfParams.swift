@@ -12,10 +12,7 @@ import Moya
 
 public let WolfNetworkParams = WolfParams()
 
-public class WolfParams: NSObject {
-    public var msg = "msg"
-    public var code = "code"
-    public var data = "data"
+public class WolfParams {
     // 请求头
     public var isDebug = false
     public var header = [String: String]()

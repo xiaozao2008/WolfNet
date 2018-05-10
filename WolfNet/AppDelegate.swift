@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  WolfNet
 //
-//  Created by xiaozao on 2017/11/16.
-//  Copyright © 2017年 Tony. All rights reserved.
+//  Created by xiaozao on 2018/5/10.
+//  Copyright © 2018年 Tony. All rights reserved.
 //
 
 import UIKit
@@ -15,12 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        // Override point for customization after application launch.
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
-        self.window?.backgroundColor = UIColor.white
-        let rootVC = UINavigationController.init(rootViewController: ViewController())
-        self.window?.rootViewController = rootVC
+        let roo = ViewController()
+        self.window?.rootViewController = roo
         self.window?.makeKeyAndVisible()
-
         return true
     }
 

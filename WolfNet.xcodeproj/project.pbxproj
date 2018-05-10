@@ -7,145 +7,135 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03B360AF1FBE9FCC00E29335 /* WolfParams.swift in Headers */ = {isa = PBXBuildFile; fileRef = 03C3EC781FBD610C0032D380 /* WolfParams.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		03B360B01FBEA09C00E29335 /* WolfNetwork.swift in Headers */ = {isa = PBXBuildFile; fileRef = 03C3EC771FBD610C0032D380 /* WolfNetwork.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		03B360B11FBEA0A000E29335 /* WolfBaseModel.swift in Headers */ = {isa = PBXBuildFile; fileRef = 03C3EC791FBD610C0032D380 /* WolfBaseModel.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		03C3EC651FBD60FF0032D380 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3EC641FBD60FF0032D380 /* AppDelegate.swift */; };
-		03C3EC671FBD60FF0032D380 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3EC661FBD60FF0032D380 /* ViewController.swift */; };
-		03C3EC6A1FBD60FF0032D380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C3EC681FBD60FF0032D380 /* Main.storyboard */; };
-		03C3EC6C1FBD60FF0032D380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03C3EC6B1FBD60FF0032D380 /* Assets.xcassets */; };
-		03C3EC6F1FBD60FF0032D380 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C3EC6D1FBD60FF0032D380 /* LaunchScreen.storyboard */; };
-		03C3ECA91FBD6C490032D380 /* WolfTargetTypeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3EC7B1FBD610C0032D380 /* WolfTargetTypeDemo.swift */; };
-		03C3ECAA1FBD6C4D0032D380 /* WolfNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3EC771FBD610C0032D380 /* WolfNetwork.swift */; };
-		03C3ECAB1FBD6C4F0032D380 /* WolfParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3EC781FBD610C0032D380 /* WolfParams.swift */; };
-		03C3ECAC1FBD6C520032D380 /* WolfBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C3EC791FBD610C0032D380 /* WolfBaseModel.swift */; };
-		F056B21B7FFB52423BE67B7A /* Pods_WolfNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 126FB810BD1FAD80A497AEFA /* Pods_WolfNet.framework */; };
+		03C0B9C720A49FAF00FF9665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C0B9C620A49FAF00FF9665 /* AppDelegate.swift */; };
+		03C0B9C920A49FAF00FF9665 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C0B9C820A49FAF00FF9665 /* ViewController.swift */; };
+		03C0B9CE20A49FAF00FF9665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03C0B9CD20A49FAF00FF9665 /* Assets.xcassets */; };
+		03C0B9D120A49FAF00FF9665 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C0B9CF20A49FAF00FF9665 /* LaunchScreen.storyboard */; };
+		03C0B9DE20A49FE200FF9665 /* WolfNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C0B9D920A49FE200FF9665 /* WolfNetwork.swift */; };
+		03C0B9DF20A49FE200FF9665 /* WolfParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C0B9DA20A49FE200FF9665 /* WolfParams.swift */; };
+		03C0B9E020A49FE200FF9665 /* WolfModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C0B9DB20A49FE200FF9665 /* WolfModel.swift */; };
+		03C0B9E120A49FE200FF9665 /* WolfTargetTypeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C0B9DD20A49FE200FF9665 /* WolfTargetTypeDemo.swift */; };
+		03C0B9E620A4AC4300FF9665 /* WolfBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C0B9E520A4AC4300FF9665 /* WolfBaseModel.swift */; };
+		1C407E4224939763D6687A10 /* Pods_WolfNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F623F4094D3A406B9279280E /* Pods_WolfNet.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		03C3EC611FBD60FF0032D380 /* WolfNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WolfNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		03C3EC641FBD60FF0032D380 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		03C3EC661FBD60FF0032D380 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		03C3EC691FBD60FF0032D380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		03C3EC6B1FBD60FF0032D380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		03C3EC6E1FBD60FF0032D380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		03C3EC701FBD60FF0032D380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		03C3EC771FBD610C0032D380 /* WolfNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolfNetwork.swift; sourceTree = "<group>"; };
-		03C3EC781FBD610C0032D380 /* WolfParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolfParams.swift; sourceTree = "<group>"; };
-		03C3EC791FBD610C0032D380 /* WolfBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolfBaseModel.swift; sourceTree = "<group>"; };
-		03C3EC7B1FBD610C0032D380 /* WolfTargetTypeDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolfTargetTypeDemo.swift; sourceTree = "<group>"; };
-		126FB810BD1FAD80A497AEFA /* Pods_WolfNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WolfNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		654F1D3B4F6703A73A5C564D /* Pods-WolfNet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WolfNet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WolfNet/Pods-WolfNet.debug.xcconfig"; sourceTree = "<group>"; };
-		A568EF7213960C4DB8B50352 /* Pods-WolfNet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WolfNet.release.xcconfig"; path = "Pods/Target Support Files/Pods-WolfNet/Pods-WolfNet.release.xcconfig"; sourceTree = "<group>"; };
+		03C0B9C320A49FAF00FF9665 /* WolfNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WolfNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03C0B9C620A49FAF00FF9665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03C0B9C820A49FAF00FF9665 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		03C0B9CD20A49FAF00FF9665 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03C0B9D020A49FAF00FF9665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03C0B9D220A49FAF00FF9665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03C0B9D920A49FE200FF9665 /* WolfNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WolfNetwork.swift; sourceTree = "<group>"; };
+		03C0B9DA20A49FE200FF9665 /* WolfParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WolfParams.swift; sourceTree = "<group>"; };
+		03C0B9DB20A49FE200FF9665 /* WolfModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WolfModel.swift; sourceTree = "<group>"; };
+		03C0B9DD20A49FE200FF9665 /* WolfTargetTypeDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WolfTargetTypeDemo.swift; sourceTree = "<group>"; };
+		03C0B9E520A4AC4300FF9665 /* WolfBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolfBaseModel.swift; sourceTree = "<group>"; };
+		4471E72519F8A049FD928526 /* Pods-WolfNet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WolfNet.release.xcconfig"; path = "Pods/Target Support Files/Pods-WolfNet/Pods-WolfNet.release.xcconfig"; sourceTree = "<group>"; };
+		725DE3A506DB328A9F1EEECC /* Pods-WolfNet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WolfNet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WolfNet/Pods-WolfNet.debug.xcconfig"; sourceTree = "<group>"; };
+		F623F4094D3A406B9279280E /* Pods_WolfNet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WolfNet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		03C3EC5E1FBD60FF0032D380 /* Frameworks */ = {
+		03C0B9C020A49FAF00FF9665 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F056B21B7FFB52423BE67B7A /* Pods_WolfNet.framework in Frameworks */,
+				1C407E4224939763D6687A10 /* Pods_WolfNet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03C3EC581FBD60FF0032D380 = {
+		03C0B9BA20A49FAF00FF9665 = {
 			isa = PBXGroup;
 			children = (
-				03C3EC631FBD60FF0032D380 /* WolfNet */,
-				03C3EC621FBD60FF0032D380 /* Products */,
-				CE7149A5C44489ABFB19754F /* Pods */,
-				D510DEE580B737414225FBFB /* Frameworks */,
+				03C0B9C520A49FAF00FF9665 /* WolfNet */,
+				03C0B9C420A49FAF00FF9665 /* Products */,
+				F6185143FE28E98E247E452B /* Pods */,
+				CF51D6FD25A2993214832473 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		03C3EC621FBD60FF0032D380 /* Products */ = {
+		03C0B9C420A49FAF00FF9665 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				03C3EC611FBD60FF0032D380 /* WolfNet.app */,
+				03C0B9C320A49FAF00FF9665 /* WolfNet.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		03C3EC631FBD60FF0032D380 /* WolfNet */ = {
+		03C0B9C520A49FAF00FF9665 /* WolfNet */ = {
 			isa = PBXGroup;
 			children = (
-				03C3EC641FBD60FF0032D380 /* AppDelegate.swift */,
-				03C3EC661FBD60FF0032D380 /* ViewController.swift */,
-				03C3EC7A1FBD610C0032D380 /* Demo */,
-				03C3EC761FBD610C0032D380 /* Wolf */,
-				03C3EC681FBD60FF0032D380 /* Main.storyboard */,
-				03C3EC6B1FBD60FF0032D380 /* Assets.xcassets */,
-				03C3EC6D1FBD60FF0032D380 /* LaunchScreen.storyboard */,
-				03C3EC701FBD60FF0032D380 /* Info.plist */,
+				03C0B9C620A49FAF00FF9665 /* AppDelegate.swift */,
+				03C0B9C820A49FAF00FF9665 /* ViewController.swift */,
+				03C0B9DC20A49FE200FF9665 /* Demo */,
+				03C0B9D820A49FE200FF9665 /* Wolf */,
+				03C0B9CD20A49FAF00FF9665 /* Assets.xcassets */,
+				03C0B9CF20A49FAF00FF9665 /* LaunchScreen.storyboard */,
+				03C0B9D220A49FAF00FF9665 /* Info.plist */,
 			);
 			path = WolfNet;
 			sourceTree = "<group>";
 		};
-		03C3EC761FBD610C0032D380 /* Wolf */ = {
+		03C0B9D820A49FE200FF9665 /* Wolf */ = {
 			isa = PBXGroup;
 			children = (
-				03C3EC771FBD610C0032D380 /* WolfNetwork.swift */,
-				03C3EC781FBD610C0032D380 /* WolfParams.swift */,
-				03C3EC791FBD610C0032D380 /* WolfBaseModel.swift */,
+				03C0B9E420A4AC2F00FF9665 /* BaseModel */,
+				03C0B9D920A49FE200FF9665 /* WolfNetwork.swift */,
+				03C0B9DA20A49FE200FF9665 /* WolfParams.swift */,
+				03C0B9DB20A49FE200FF9665 /* WolfModel.swift */,
 			);
 			path = Wolf;
 			sourceTree = "<group>";
 		};
-		03C3EC7A1FBD610C0032D380 /* Demo */ = {
+		03C0B9DC20A49FE200FF9665 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				03C3EC7B1FBD610C0032D380 /* WolfTargetTypeDemo.swift */,
+				03C0B9DD20A49FE200FF9665 /* WolfTargetTypeDemo.swift */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
 		};
-		CE7149A5C44489ABFB19754F /* Pods */ = {
+		03C0B9E420A4AC2F00FF9665 /* BaseModel */ = {
 			isa = PBXGroup;
 			children = (
-				654F1D3B4F6703A73A5C564D /* Pods-WolfNet.debug.xcconfig */,
-				A568EF7213960C4DB8B50352 /* Pods-WolfNet.release.xcconfig */,
+				03C0B9E520A4AC4300FF9665 /* WolfBaseModel.swift */,
 			);
-			name = Pods;
+			path = BaseModel;
 			sourceTree = "<group>";
 		};
-		D510DEE580B737414225FBFB /* Frameworks */ = {
+		CF51D6FD25A2993214832473 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				126FB810BD1FAD80A497AEFA /* Pods_WolfNet.framework */,
+				F623F4094D3A406B9279280E /* Pods_WolfNet.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F6185143FE28E98E247E452B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				725DE3A506DB328A9F1EEECC /* Pods-WolfNet.debug.xcconfig */,
+				4471E72519F8A049FD928526 /* Pods-WolfNet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		03B360AE1FBE9FBA00E29335 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				03B360AF1FBE9FCC00E29335 /* WolfParams.swift in Headers */,
-				03B360B11FBEA0A000E29335 /* WolfBaseModel.swift in Headers */,
-				03B360B01FBEA09C00E29335 /* WolfNetwork.swift in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
-		03C3EC601FBD60FF0032D380 /* WolfNet */ = {
+		03C0B9C220A49FAF00FF9665 /* WolfNet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 03C3EC731FBD60FF0032D380 /* Build configuration list for PBXNativeTarget "WolfNet" */;
+			buildConfigurationList = 03C0B9D520A49FAF00FF9665 /* Build configuration list for PBXNativeTarget "WolfNet" */;
 			buildPhases = (
-				62B53727DE9D431E1E2E697B /* [CP] Check Pods Manifest.lock */,
-				03C3EC5D1FBD60FF0032D380 /* Sources */,
-				03C3EC5E1FBD60FF0032D380 /* Frameworks */,
-				03C3EC5F1FBD60FF0032D380 /* Resources */,
-				D3780A658CD3FE253BE6324F /* [CP] Embed Pods Frameworks */,
-				F3C2F3BB5906039038B031B3 /* [CP] Copy Pods Resources */,
-				03B360AE1FBE9FBA00E29335 /* Headers */,
+				8D874139E70543957CEF2A1E /* [CP] Check Pods Manifest.lock */,
+				03C0B9BF20A49FAF00FF9665 /* Sources */,
+				03C0B9C020A49FAF00FF9665 /* Frameworks */,
+				03C0B9C120A49FAF00FF9665 /* Resources */,
+				5E5CEF533D0C6162A965A58D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,26 +143,26 @@
 			);
 			name = WolfNet;
 			productName = WolfNet;
-			productReference = 03C3EC611FBD60FF0032D380 /* WolfNet.app */;
+			productReference = 03C0B9C320A49FAF00FF9665 /* WolfNet.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		03C3EC591FBD60FF0032D380 /* Project object */ = {
+		03C0B9BB20A49FAF00FF9665 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Tony;
 				TargetAttributes = {
-					03C3EC601FBD60FF0032D380 = {
-						CreatedOnToolsVersion = 9.0;
+					03C0B9C220A49FAF00FF9665 = {
+						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 03C3EC5C1FBD60FF0032D380 /* Build configuration list for PBXProject "WolfNet" */;
+			buildConfigurationList = 03C0B9BE20A49FAF00FF9665 /* Build configuration list for PBXProject "WolfNet" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -180,31 +170,52 @@
 				en,
 				Base,
 			);
-			mainGroup = 03C3EC581FBD60FF0032D380;
-			productRefGroup = 03C3EC621FBD60FF0032D380 /* Products */;
+			mainGroup = 03C0B9BA20A49FAF00FF9665;
+			productRefGroup = 03C0B9C420A49FAF00FF9665 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				03C3EC601FBD60FF0032D380 /* WolfNet */,
+				03C0B9C220A49FAF00FF9665 /* WolfNet */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		03C3EC5F1FBD60FF0032D380 /* Resources */ = {
+		03C0B9C120A49FAF00FF9665 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03C3EC6F1FBD60FF0032D380 /* LaunchScreen.storyboard in Resources */,
-				03C3EC6C1FBD60FF0032D380 /* Assets.xcassets in Resources */,
-				03C3EC6A1FBD60FF0032D380 /* Main.storyboard in Resources */,
+				03C0B9D120A49FAF00FF9665 /* LaunchScreen.storyboard in Resources */,
+				03C0B9CE20A49FAF00FF9665 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		62B53727DE9D431E1E2E697B /* [CP] Check Pods Manifest.lock */ = {
+		5E5CEF533D0C6162A965A58D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WolfNet/Pods-WolfNet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WolfNet/Pods-WolfNet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D874139E70543957CEF2A1E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -222,76 +233,30 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D3780A658CD3FE253BE6324F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-WolfNet/Pods-WolfNet-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WolfNet/Pods-WolfNet-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F3C2F3BB5906039038B031B3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WolfNet/Pods-WolfNet-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		03C3EC5D1FBD60FF0032D380 /* Sources */ = {
+		03C0B9BF20A49FAF00FF9665 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03C3ECA91FBD6C490032D380 /* WolfTargetTypeDemo.swift in Sources */,
-				03C3EC671FBD60FF0032D380 /* ViewController.swift in Sources */,
-				03C3ECAC1FBD6C520032D380 /* WolfBaseModel.swift in Sources */,
-				03C3ECAB1FBD6C4F0032D380 /* WolfParams.swift in Sources */,
-				03C3ECAA1FBD6C4D0032D380 /* WolfNetwork.swift in Sources */,
-				03C3EC651FBD60FF0032D380 /* AppDelegate.swift in Sources */,
+				03C0B9E020A49FE200FF9665 /* WolfModel.swift in Sources */,
+				03C0B9C920A49FAF00FF9665 /* ViewController.swift in Sources */,
+				03C0B9E620A4AC4300FF9665 /* WolfBaseModel.swift in Sources */,
+				03C0B9DE20A49FE200FF9665 /* WolfNetwork.swift in Sources */,
+				03C0B9E120A49FE200FF9665 /* WolfTargetTypeDemo.swift in Sources */,
+				03C0B9C720A49FAF00FF9665 /* AppDelegate.swift in Sources */,
+				03C0B9DF20A49FE200FF9665 /* WolfParams.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		03C3EC681FBD60FF0032D380 /* Main.storyboard */ = {
+		03C0B9CF20A49FAF00FF9665 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				03C3EC691FBD60FF0032D380 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		03C3EC6D1FBD60FF0032D380 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				03C3EC6E1FBD60FF0032D380 /* Base */,
+				03C0B9D020A49FAF00FF9665 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -299,7 +264,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		03C3EC711FBD60FF0032D380 /* Debug */ = {
+		03C0B9D320A49FAF00FF9665 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -347,7 +312,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -356,7 +321,7 @@
 			};
 			name = Debug;
 		};
-		03C3EC721FBD60FF0032D380 /* Release */ = {
+		03C0B9D420A49FAF00FF9665 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -398,7 +363,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -406,17 +371,14 @@
 			};
 			name = Release;
 		};
-		03C3EC741FBD60FF0032D380 /* Debug */ = {
+		03C0B9D620A49FAF00FF9665 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 654F1D3B4F6703A73A5C564D /* Pods-WolfNet.debug.xcconfig */;
+			baseConfigurationReference = 725DE3A506DB328A9F1EEECC /* Pods-WolfNet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = WolfNet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tony.WolfNet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -425,17 +387,14 @@
 			};
 			name = Debug;
 		};
-		03C3EC751FBD60FF0032D380 /* Release */ = {
+		03C0B9D720A49FAF00FF9665 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A568EF7213960C4DB8B50352 /* Pods-WolfNet.release.xcconfig */;
+			baseConfigurationReference = 4471E72519F8A049FD928526 /* Pods-WolfNet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = WolfNet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Tony.WolfNet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,25 +406,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		03C3EC5C1FBD60FF0032D380 /* Build configuration list for PBXProject "WolfNet" */ = {
+		03C0B9BE20A49FAF00FF9665 /* Build configuration list for PBXProject "WolfNet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				03C3EC711FBD60FF0032D380 /* Debug */,
-				03C3EC721FBD60FF0032D380 /* Release */,
+				03C0B9D320A49FAF00FF9665 /* Debug */,
+				03C0B9D420A49FAF00FF9665 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		03C3EC731FBD60FF0032D380 /* Build configuration list for PBXNativeTarget "WolfNet" */ = {
+		03C0B9D520A49FAF00FF9665 /* Build configuration list for PBXNativeTarget "WolfNet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				03C3EC741FBD60FF0032D380 /* Debug */,
-				03C3EC751FBD60FF0032D380 /* Release */,
+				03C0B9D620A49FAF00FF9665 /* Debug */,
+				03C0B9D720A49FAF00FF9665 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 03C3EC591FBD60FF0032D380 /* Project object */;
+	rootObject = 03C0B9BB20A49FAF00FF9665 /* Project object */;
 }
