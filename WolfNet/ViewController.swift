@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct User: WolfProtocol {
+struct User: WolfMapper {
     var age: Int?
     var name: String?
     

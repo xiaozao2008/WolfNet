@@ -8,7 +8,7 @@
 
 import Foundation
 
-class WolfBaseModel<T: WolfProtocol>: WolfProtocol {
+struct WolfBaseModel<T: WolfMapper>: WolfMapper {
     
     func didInit() {
     }
@@ -18,7 +18,7 @@ class WolfBaseModel<T: WolfProtocol>: WolfProtocol {
     var data: T?
 }
 
-class WolfBaseModels<T: WolfProtocol>: WolfProtocol {
+struct WolfBaseModels<T: WolfMapper>: WolfMapper {
     
     func didInit() {
     }

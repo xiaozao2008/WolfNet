@@ -12,8 +12,6 @@
 		03C0B9CE20A49FAF00FF9665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03C0B9CD20A49FAF00FF9665 /* Assets.xcassets */; };
 		03C0B9D120A49FAF00FF9665 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C0B9CF20A49FAF00FF9665 /* LaunchScreen.storyboard */; };
 		03C0B9DE20A49FE200FF9665 /* WolfNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C0B9D920A49FE200FF9665 /* WolfNetwork.swift */; };
-		03C0B9DF20A49FE200FF9665 /* WolfParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C0B9DA20A49FE200FF9665 /* WolfParams.swift */; };
-		03C0B9E020A49FE200FF9665 /* WolfModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C0B9DB20A49FE200FF9665 /* WolfModel.swift */; };
 		03C0B9E120A49FE200FF9665 /* WolfTargetTypeDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C0B9DD20A49FE200FF9665 /* WolfTargetTypeDemo.swift */; };
 		03C0B9E620A4AC4300FF9665 /* WolfBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C0B9E520A4AC4300FF9665 /* WolfBaseModel.swift */; };
 		1C407E4224939763D6687A10 /* Pods_WolfNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F623F4094D3A406B9279280E /* Pods_WolfNet.framework */; };
@@ -27,8 +25,6 @@
 		03C0B9D020A49FAF00FF9665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03C0B9D220A49FAF00FF9665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03C0B9D920A49FE200FF9665 /* WolfNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WolfNetwork.swift; sourceTree = "<group>"; };
-		03C0B9DA20A49FE200FF9665 /* WolfParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WolfParams.swift; sourceTree = "<group>"; };
-		03C0B9DB20A49FE200FF9665 /* WolfModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WolfModel.swift; sourceTree = "<group>"; };
 		03C0B9DD20A49FE200FF9665 /* WolfTargetTypeDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WolfTargetTypeDemo.swift; sourceTree = "<group>"; };
 		03C0B9E520A4AC4300FF9665 /* WolfBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolfBaseModel.swift; sourceTree = "<group>"; };
 		4471E72519F8A049FD928526 /* Pods-WolfNet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WolfNet.release.xcconfig"; path = "Pods/Target Support Files/Pods-WolfNet/Pods-WolfNet.release.xcconfig"; sourceTree = "<group>"; };
@@ -83,10 +79,8 @@
 		03C0B9D820A49FE200FF9665 /* Wolf */ = {
 			isa = PBXGroup;
 			children = (
-				03C0B9E420A4AC2F00FF9665 /* BaseModel */,
 				03C0B9D920A49FE200FF9665 /* WolfNetwork.swift */,
-				03C0B9DA20A49FE200FF9665 /* WolfParams.swift */,
-				03C0B9DB20A49FE200FF9665 /* WolfModel.swift */,
+				03C0B9E520A4AC4300FF9665 /* WolfBaseModel.swift */,
 			);
 			path = Wolf;
 			sourceTree = "<group>";
@@ -97,14 +91,6 @@
 				03C0B9DD20A49FE200FF9665 /* WolfTargetTypeDemo.swift */,
 			);
 			path = Demo;
-			sourceTree = "<group>";
-		};
-		03C0B9E420A4AC2F00FF9665 /* BaseModel */ = {
-			isa = PBXGroup;
-			children = (
-				03C0B9E520A4AC4300FF9665 /* WolfBaseModel.swift */,
-			);
-			path = BaseModel;
 			sourceTree = "<group>";
 		};
 		CF51D6FD25A2993214832473 /* Frameworks */ = {
@@ -240,13 +226,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03C0B9E020A49FE200FF9665 /* WolfModel.swift in Sources */,
 				03C0B9C920A49FAF00FF9665 /* ViewController.swift in Sources */,
 				03C0B9E620A4AC4300FF9665 /* WolfBaseModel.swift in Sources */,
 				03C0B9DE20A49FE200FF9665 /* WolfNetwork.swift in Sources */,
 				03C0B9E120A49FE200FF9665 /* WolfTargetTypeDemo.swift in Sources */,
 				03C0B9C720A49FAF00FF9665 /* AppDelegate.swift in Sources */,
-				03C0B9DF20A49FE200FF9665 /* WolfParams.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
